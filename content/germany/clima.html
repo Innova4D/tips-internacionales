@@ -19,14 +19,28 @@
 <body>
   <header class="nav-bar">
     <div class="back-nav" horizontal layout center>
-    <paper-fab class="button" onclick="setTimeout(function() {window.location='recomendaciones.html' }, 450)" icon="arrow-back"></paper-fab>
-    <div class="title">Alemania - Clima</div>
+      <paper-fab class="button" onclick="setTimeout(function() {window.location='recomendaciones.html' }, 450)" icon="arrow-back"></paper-fab>
+      <div class="title">Alemania - Clima</div>
     </div>
   </header>
   <div class="page-banner">
   <style type="text/css">
   .nav-bar {
     background-image: url('../../images/clima.jpg');
+  }
+  .live-weather{
+    padding: 20px;
+  }
+  #cont_aa879bbf4c4c0062fce983ef27f78dbe{
+    border-left: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  #cont_e94872249d0a93fe95eee3ed09eb3099{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
   </style>
 </div>
@@ -54,6 +68,17 @@
     <img src="../../images/inviernoico.png" />
     <div class="label">Invierno</div>
     <paper-ripple fit></paper-ripple>
+  </div>
+
+  <div class="live-weather" horizontal layout center>
+    <div id="cont_e94872249d0a93fe95eee3ed09eb3099">
+      <span id="h_e94872249d0a93fe95eee3ed09eb3099"><a href="http://www.meteored.mx/clima_Monterrey-America+Norte-Mexico-Nuevo+Leon-MMMY-1-21045.html" target="_blank" style="color:#808080; font-family:2; font-size:14px;">Clima Alemania</a></span>
+      <script type="text/javascript" src="http://www.meteored.mx/wid_loader/e94872249d0a93fe95eee3ed09eb3099"></script>
+    </div>
+    <div id="cont_aa879bbf4c4c0062fce983ef27f78dbe">
+      <span id="h_aa879bbf4c4c0062fce983ef27f78dbe"><a href="http://www.meteored.mx/clima_Monterrey-America+Norte-Mexico-Nuevo+Leon-MMMY-1-21045.html" target="_blank" style="color:#808080; font-family:2; font-size:14px;">Clima M&eacute;xico</a></span>
+      <script type="text/javascript" src="http://www.meteored.mx/wid_loader/aa879bbf4c4c0062fce983ef27f78dbe"></script>
+    </div>
   </div>
 
   <div class="dummy" horizontal layout center></div>
