@@ -1,76 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
   <meta charset="utf-8" />
   <meta content="width=device-width initial-scale=1" name="viewport" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-  <link href="/TIPSinternacionales/bower_components/paper-button/paper-button.html" rel="import" />
-  <link href="/TIPSinternacionales/bower_components/paper-icon-button/paper-icon-button.html" rel="import" />
-  <link href="/TIPSinternacionales/css/main.css" rel="stylesheet" />
-  <link href="/TIPSinternacionales/bower_components/normalize.css/normalize.css" rel="stylesheet" />
-  <link href="http:///TIPSinternacionales/content/germany/pais.html" rel="canonical" />
-  <link href="/TIPSinternacionales/bower_components/font-roboto/roboto.html" rel="import" />
-  <meta content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-" name="description" />
-  <title>Datos del país</title>
+  <script src="../../bower_components/platform/platform.js"></script>
+  <link href="../../bower_components/polymer/polymer.html" rel="import" />
+  <link href="../../bower_components/core-icons/core-icons.html" rel="import">
+  <link href="bower_components/paper-ripple/paper-ripple.html" rel="import" />
+  <link href="../../bower_components/paper-button/paper-button.html" rel="import" />
+  <link href="../../bower_components/paper-fab/paper-fab.html" rel="import" />
+  <link href="../../css/main.css" rel="stylesheet" />
+  <link href="../../bower_components/normalize.css/normalize.css" rel="stylesheet" />
+  <link href="http:///TIPSinternacionales/content/germany/" rel="canonical" />
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+  <title>Alemania - Datos del país</title>
 </head>
-  <body>
-    <header class="nav-bar">
-  <div class="bar-container"></div>
-  <paper-icon-button class="button" onclick="setTimeout(function() {window.location='/TIPSinternacionales/content/germany/informacion.html' }, 250)" src="/TIPSinternacionales/images/arrow.png"></paper-icon-button>
-  <div class="title">
-    Datos del país
-  </div>
-  <a href="http://www.secotrade.puebla.gob.mx"><img class="logo" src="/TIPSinternacionales/images/sedeco.png" /></a>
-</header>
-<div class="page-banner">
+<body>
+  <header class="nav-bar" horizontal layout center>
+    <paper-fab class="button" onclick="setTimeout(function() {window.location='informacion.html' }, 450)" icon="arrow-back" mini></paper-fab>
+    <div class="title">Alemania - Datos del país</div>
+  </header>
+
+  <div class="page-banner">
   <style type="text/css">
-    .page-banner {
-      background-image: url('/TIPSinternacionales/images/datospais.jpg');
-      background-size: cover;
-      height: 164px;
-      margin-top: 60px;
-      background-position: center top;
-    }
+  .page-banner {
+    background-image: url('../../images/datospais.jpg');
+    background-size: cover;
+    height: 120px;
+    margin-top: 0px;
+    background-position: center top;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+  }
+  table{
+    border: 1px solid black;
+    color: white;
+  }
+  td{
+    border: 1px solid black;
+    padding: 5px;
+  }
+  th{
+    border: 1px solid black;
+  }
   </style>
 </div>
-    <div class="page-content">
-      <div class="text-center">
-        
-<table border = "1"><tr><th>
-Nombre oficial
-</th><th>
-República Federal de Alemania
-</th></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
-Capital
-</td><td style="color:black; text-align: center; background: #03a9f4;">
-Berlín
-</td></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
-Idioma
-</td><td style="color:black; text-align: center; background: #b3e5fc;">
-Alemán
-</td></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
-Moneda
-</td><td style="color:black; text-align: center; background: #03a9f4;">
-Euro (€, EUR)
-</td></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
-Presidente/Primer Ministro
-</td><td style="color:black; text-align: center; background: #b3e5fc;">
-Presidente:Joachim Gauck
+<div class="page-content">
+  <div class="text-center">
 
-Canciller federal: Angela Merkel
-</td></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
-Religión predominante
-</td><td style="color:black; text-align: center; background: #03a9f4;">
-Cirstianismo
-</td></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
-Zona horaria
-</td><td style="color:black; text-align: center; background: #b3e5fc;">
-UTC+1
+    <table><tr><th>
+      Nombre oficial
+    </th><th>
+      República Federal de Alemania
+    </th></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
+      Capital
+    </td><td style="color:black; text-align: center; background: white;">
+      Berlín
+    </td></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
+      Idioma
+    </td><td style="color:black; text-align: center; background: #b3e5fc;">
+      Alemán
+    </td></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
+      Moneda
+    </td><td style="color:black; text-align: center; background: white;">
+      Euro (€, EUR)
+    </td></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
+      Presidente/Primer Ministro
+    </td><td style="color:black; text-align: center; background: #b3e5fc;">
+      Presidente:Joachim Gauck
 
-Hay siete horas más en Alemania
-</td></tr></table>
-      </div>
-    </div>
-  </body>
+      Canciller federal: Angela Merkel
+    </td></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
+      Religión predominante
+    </td><td style="color:black; text-align: center; background: white;">
+      Cristianismo
+    </td></tr><tr><td style="color:white; text-align: center; background: #005b99; height:60px;">
+      Zona horaria
+    </td><td style="color:black; text-align: center; background: #b3e5fc;">
+      UTC+1
+
+      Hay siete horas más en Alemania
+    </td></tr></table>
+  </div>
+</div>
+
+<div class="footer" horizontal justified layout>
+  <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
+  <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
+  <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
+</div>
+
+</body>
 </html>
