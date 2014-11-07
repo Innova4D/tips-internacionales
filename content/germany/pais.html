@@ -17,79 +17,215 @@
   <title>Alemania - Datos del país</title>
 </head>
 <body>
-  <header class="nav-bar" horizontal layout center>
-    <paper-fab class="button" onclick="setTimeout(function() {window.location='informacion.html' }, 450)" icon="arrow-back" mini></paper-fab>
-    <div class="title">Alemania - Datos del país</div>
+  <header class="nav-bar">
+    <div class="back-nav" horizontal layout center>
+      <paper-fab class="button" onclick="setTimeout(function() {window.location='informacion.html' }, 450)" icon="arrow-back"></paper-fab>
+      <div class="title">Alemania - Datos del país</div>
+    </div>
   </header>
-
   <div class="page-banner">
   <style type="text/css">
-  .page-banner {
+  .nav-bar {
     background-image: url('../../images/datospais.jpg');
-    background-size: cover;
-    height: 120px;
-    margin-top: 0px;
-    background-position: center top;
-    filter: blur(1px);
-    -webkit-filter: blur(1px);
   }
   table{
-    margin-top: 25px;
+    width: 90%;
     border: 1px solid #74bbcd;
-    color: white;
   }
   td{
     border: 1px solid #74bbcd;
     padding: 5px;
     height: 45px;
   }
+  table a {
+    color: black;
+    text-decoration: none;
+  }
   </style>
 </div>
 <div class="page-content">
-  <div class="text-center">
-    <table><tr><td style="border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
-      Nombre oficial
-    </td><td style="color:black; text-align: center; background: #9fcedb;">
-      República Federal de Alemania
-    </td></tr><tr><td style="border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
-      Capital
-    </td><td style="color:black; text-align: center; background: white;">
-      Berlín
-    </td></tr><tr><td style=" border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
-      Idioma
-    </td><td style="color:black; text-align: center; background: #9fcedb;">
-      Alemán
-    </td></tr><tr><td style="border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
-      Moneda
-    </td><td style="color:black; text-align: center; background: white;">
-      Euro (€, EUR)
-    </td></tr><tr><td style=" border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
-      Presidente
-    </td><td style="color:black; text-align: center; background: #9fcedb;">
-      Joachim Gauck
-    </td></tr><tr><td style=" border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
-        Canciller
-      </td><td style="color:black; text-align: center; background: white;">
-        Angela Merkel
-    </td></tr><tr><td style=" border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
-      Religión predominante
-    </td><td style="color:black; text-align: center; background: #9fcedb;">
-      Cristianismo
-    </td></tr><tr><td style="border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
-      Zona horaria
-    </td><td style="color:black; text-align: center; background: white;">
-      UTC+1
+  <div class="text-center" vertical layout center>
+    <!-- <table><tr><td style="border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
+    Nombre oficial
+  </td><td style="color:black; text-align: center; background: #9fcedb;">
+  República Federal de Alemania
+</td></tr><tr><td style="border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
+Capital
+</td><td style="color:black; text-align: center; background: white;">
+Berlín
+</td></tr><tr><td style=" border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
+Idioma
+</td><td style="color:black; text-align: center; background: #9fcedb;">
+Alemán
+</td></tr><tr><td style="border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
+Moneda
+</td><td style="color:black; text-align: center; background: white;">
+Euro (€, EUR)
+</td></tr><tr><td style=" border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
+Presidente
+</td><td style="color:black; text-align: center; background: #9fcedb;">
+Joachim Gauck
+</td></tr><tr><td style=" border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
+Canciller
+</td><td style="color:black; text-align: center; background: white;">
+Angela Merkel
+</td></tr><tr><td style=" border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
+Religión predominante
+</td><td style="color:black; text-align: center; background: #9fcedb;">
+Cristianismo
+</td></tr><tr><td style="border-right: 5px solid #74bbcd; color:white; text-align: center; background: #0e9eb9;">
+Zona horaria
+</td><td style="color:black; text-align: center; background: white;">
+UTC+1
 
-      Hay siete horas más en Alemania
-    </td></tr></table>
-  </div>
-</div>
+Hay siete horas más en Alemania
+</td></tr></table> -->
+<table class="infobox_v2 geography vcard" style="line-height: 1.4em; text-align:left; padding:.23em;">
+  <tbody><tr>
+    <th class="cabecera mapa fn org" colspan="2" style="text-align:center; background-color:transparent; padding:0"><i>Bundesrepublik Deutschland</i><br>
+      República Federal de Alemania</th>
+    </tr>
+    <tr class="">
+      <td colspan="2" class="mergedbottomrow" style="text-align:center; font-size:100%; font-weight:bold; background-color: #cddeff"><a href="/wiki/Estado_miembro_de_la_Uni%C3%B3n_Europea" title="Estado miembro de la Unión Europea">Estado miembro</a> de la <a href="/wiki/Uni%C3%B3n_Europea" title="Unión Europea">Unión Europea</a></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align:center; border:0; padding:0">
+        <table style="width:100%; background-color:transparent">
+          <tbody><tr>
+            <td class="" style="width:auto; vertical-align:middle;"><a href="//commons.wikimedia.org/wiki/File:Flag_of_Germany.svg" class="image"><img alt="Flag of Germany.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/125px-Flag_of_Germany.svg.png" width="125" height="75" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/188px-Flag_of_Germany.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/250px-Flag_of_Germany.svg.png 2x" data-file-width="1000" data-file-height="600"></a><br>
+              <span style="font-size:smaller"><a href="/wiki/Bandera_de_Alemania" title="Bandera de Alemania">Bandera</a></span></td>
+              <td class="" style="width:auto; vertical-align:middle;"><a href="//commons.wikimedia.org/wiki/File:Coat_of_arms_of_Germany.svg" class="image"><img alt="Coat of arms of Germany.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/da/Coat_of_arms_of_Germany.svg/73px-Coat_of_arms_of_Germany.svg.png" width="73" height="95" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/da/Coat_of_arms_of_Germany.svg/110px-Coat_of_arms_of_Germany.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/da/Coat_of_arms_of_Germany.svg/146px-Coat_of_arms_of_Germany.svg.png 2x" data-file-width="500" data-file-height="650"></a><br>
+                <span style="font-size:smaller"><a href="/wiki/Escudo_de_Alemania" title="Escudo de Alemania">Escudo</a></span></td>
+              </tr>
+            </tbody></table>
+          </td>
+        </tr>
+        <tr class="">
+          <td colspan="2" class="" style="text-align:center; font-size: 95%"><a href="/wiki/Anexo:Lemas_de_Estado" title="Anexo:Lemas de Estado">Lema</a>: <i>Einigkeit und Recht und Freiheit</i><br>
+            (<a href="/wiki/Idioma_alem%C3%A1n" title="Idioma alemán">alemán</a>: «Unidad y Justicia y Libertad»)<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="corchete-llamada">[</span>1<span class="corchete-llamada">]</span></a></sup></td>
+          </tr>
+          <tr class="">
+            <td colspan="2" class="" style="text-align:center; font-size: 95%"><a href="/wiki/Himno_nacional" title="Himno nacional">Himno</a>: <i><a href="/wiki/Deutschlandlied" title="Deutschlandlied">Das Lied der Deutschen</a> Tercera <a href="/wiki/Deutschlandlied#Tercera_estrofa" title="Deutschlandlied">estrofa</a></i> <sup id="ficha_ref-1" class="reference"><a href="#ficha_nota-1"><span class="corchete-llamada">[</span>1<span class="corchete-llamada">]</span></a></sup><br>
+              (<a href="/wiki/Idioma_alem%C3%A1n" title="Idioma alemán">alemán</a>: «La canción de los alemanes»)<br>
+            </td>
+          </tr>
+          <tr class="">
+            <td colspan="2" class="" style="text-align:center; padding:1px 7px 1px 1px">
+              <p><iframe width="100%" height="300" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/view?zoom=4&center=51.1657,10.4515&key=AIzaSyAlCBkKmm8DchzL8srNIEZZ7Hk4WqRzo10"></iframe></p>
+              </td>
+            </tr>
+            <tr class="">
+              <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Capital_(pol%C3%ADtica)" title="Capital (política)">Capital</a><br>
+                <a href="/wiki/Demograf%C3%ADa_de_Alemania" title="Demografía de Alemania">(y ciudad más poblada)</a></th>
+                <td class="" style="padding:1px 7px 1px 1px"><a href="/wiki/Berl%C3%ADn" title="Berlín">Berlín</a>
+                  <div class="floatright"><a href="//commons.wikimedia.org/wiki/File:Coat_of_arms_of_Berlin.svg" class="image"><img alt="Coat of arms of Berlin.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Coat_of_arms_of_Berlin.svg/20px-Coat_of_arms_of_Berlin.svg.png" width="20" height="33" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Coat_of_arms_of_Berlin.svg/30px-Coat_of_arms_of_Berlin.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Coat_of_arms_of_Berlin.svg/40px-Coat_of_arms_of_Berlin.svg.png 2x" data-file-width="450" data-file-height="739"></a></div>
+                  <br>
+                  <small><a rel="nofollow" class="external text" href="http://toolserver.org/~geohack/geohack.php?pagename=Alemania&amp;language=es&amp;params=52_31_N_13_24_E_">52°31′ N 13°24′ E</a></small></td>
+                </tr>
+                <tr class="">
+                  <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Idioma_oficial" title="Idioma oficial">Idiomas oficiales</a></th>
+                  <td class="" style="padding:1px 7px 1px 1px"><a href="/wiki/Idioma_alem%C3%A1n" title="Idioma alemán">Alemán</a><sup id="ficha_ref-2" class="reference"><a href="#ficha_nota-2"><span class="corchete-llamada">[</span>2<span class="corchete-llamada">]</span></a></sup></td>
+                </tr>
+                <tr class="">
+                  <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Gentilicio" title="Gentilicio">Gentilicio</a></th>
+                  <td class="" style="padding:1px 7px 1px 1px">alemán, -na</td>
+                </tr>
+                <tr class="mergedtoprow">
+                  <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Forma_de_gobierno" title="Forma de gobierno">Forma de gobierno</a></th>
+                  <td class="" style="padding:1px 7px 1px 1px"><a href="/wiki/Federaci%C3%B3n" title="Federación">República federal</a> <a href="/wiki/Parlamentarismo" title="Parlamentarismo">parlamentaria</a></td>
+                </tr>
+                <tr class="mergedbottomrow">
+                  <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Presidente_de_Alemania" title="Presidente de Alemania">Presidente</a><br>
+                    <a href="/wiki/Canciller_de_Alemania" title="Canciller de Alemania">Canciller federal</a><br>
+                    <a href="/wiki/Vicecanciller_de_Alemania" title="Vicecanciller de Alemania">Vicecanciller</a></th>
+                    <td class="" style="padding:1px 7px 1px 1px"><a href="/wiki/Joachim_Gauck" title="Joachim Gauck">Joachim Gauck</a><br>
+                      <a href="/wiki/Angela_Merkel" title="Angela Merkel">Angela Merkel</a><br>
+                      <a href="/wiki/Sigmar_Gabriel" title="Sigmar Gabriel">Sigmar Gabriel</a><sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="corchete-llamada">[</span>2<span class="corchete-llamada">]</span></a></sup></td>
+                    </tr>
+                    <tr class="">
+                      <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/%C3%93rgano_legislativo" title="Órgano legislativo" class="mw-redirect">Órgano legislativo</a></th>
+                      <td class="" style="padding:1px 7px 1px 1px"><a href="/wiki/Bundesrat_de_Alemania" title="Bundesrat de Alemania">Bundesrat</a><br>
+                        <a href="/wiki/Bundestag_de_Alemania" title="Bundestag de Alemania">Bundestag</a></td>
+                      </tr>
+                      <tr class="">
+                        <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Historia_de_Alemania" title="Historia de Alemania">Fundación</a><br>
+                          &nbsp;• <a href="/wiki/Unificaci%C3%B3n_alemana" title="Unificación alemana">Unificación</a><br>
+                          &nbsp;• Rep. Federal<br>
+                          &nbsp;• <a href="/wiki/Reunificaci%C3%B3n_alemana" title="Reunificación alemana">Reunificación</a></th>
+                          <td class="" style="padding:1px 7px 1px 1px"><br>
+                            <a href="/wiki/18_de_enero" title="18 de enero">18 de enero</a> de <a href="/wiki/1871" title="1871">1871</a><br>
+                            <a href="/wiki/23_de_mayo" title="23 de mayo">23 de mayo</a> de <a href="/wiki/1949" title="1949">1949</a><br>
+                            <a href="/wiki/3_de_octubre" title="3 de octubre">3 de octubre</a> de <a href="/wiki/1990" title="1990">1990</a></td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Anexo:Pa%C3%ADses_por_superficie" title="Anexo:Países por superficie">Superficie</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px"><a href="/wiki/Anexo:Pa%C3%ADses_por_superficie" title="Anexo:Países por superficie">Puesto 63.º</a></td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Frontera" title="Frontera">Fronteras</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px">3&nbsp;621&nbsp;<a href="/wiki/Kil%C3%B3metro" title="Kilómetro">km</a></td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/L%C3%ADnea_de_costa" title="Línea de costa">Línea de costa</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px">2&nbsp;389&nbsp;km</td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Anexo:Pa%C3%ADses_por_punto_m%C3%A1s_alto" title="Anexo:Países por punto más alto">Punto más alto</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px"><a href="/wiki/Zugspitze" title="Zugspitze">Zugspitze</a></td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Anexo:Pa%C3%ADses_por_poblaci%C3%B3n" title="Anexo:Países por población">Población total</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px"><a href="/wiki/Anexo:Pa%C3%ADses_por_poblaci%C3%B3n" title="Anexo:Países por población">80&nbsp;621&nbsp;788</a></td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/%C3%8Dndice_de_desarrollo_humano" title="Índice de desarrollo humano">IDH</a> (2013)</th>
+                            <td class="" style="padding:1px 7px 1px 1px"><span title="Sin cambios"><img alt="Sin cambios" src="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Steady2.svg/11px-Steady2.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/96/Steady2.svg/17px-Steady2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/96/Steady2.svg/22px-Steady2.svg.png 2x" data-file-width="300" data-file-height="300"></span> 0,911<sup id="cite_ref-IDH_6-0" class="reference"><a href="#cite_note-IDH-6"><span class="corchete-llamada">[</span>6<span class="corchete-llamada">]</span></a></sup> (<a href="/wiki/Anexo:Pa%C3%ADses_por_%C3%ADndice_de_desarrollo_humano" title="Anexo:Países por índice de desarrollo humano">6.º</a>)&nbsp;–&nbsp;<font color="#009900"><b>Muy alto</b></font></td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Moneda" title="Moneda">Moneda</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px"><a href="/wiki/Euro" title="Euro">Euro</a> (€, <code><a href="/wiki/ISO_4217" title="ISO 4217">EUR</a></code>)<sup id="ficha_ref-4" class="reference"><a href="#ficha_nota-4"><span class="corchete-llamada">[</span>4<span class="corchete-llamada">]</span></a></sup></td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Huso_horario" title="Huso horario">Huso horario</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px"><a href="/wiki/CET" title="CET" class="mw-redirect">CET</a> (<a href="/wiki/Tiempo_Coordinado_Universal" title="Tiempo Coordinado Universal" class="mw-redirect">UTC +1</a>)</td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; border:0;padding:1px 7px;font-weight:100">&nbsp;• En <a href="/wiki/Horario_de_verano" title="Horario de verano">verano</a></th>
+                            <td class="" style="border:0;padding:1px 7px 1px 1px"><a href="/wiki/CEST" title="CEST" class="mw-redirect">CEST</a> (<a href="/wiki/Tiempo_Coordinado_Universal" title="Tiempo Coordinado Universal" class="mw-redirect">UTC +2</a>)</td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/ISO_3166-1" title="ISO 3166-1">Código ISO</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px">276 / DEU / DE</td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Anexo:Dominios_de_Internet" title="Anexo:Dominios de Internet" class="mw-redirect">Dominio Internet</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px"><tt><a href="/wiki/.de" title=".de">.de</a></tt></td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Anexo:Prefijos_telef%C3%B3nicos_internacionales" title="Anexo:Prefijos telefónicos internacionales" class="mw-redirect">Prefijo telefónico</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px"><tt>+49</tt></td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Anexo:Prefijos_radiof%C3%B3nicos" title="Anexo:Prefijos radiofónicos">Prefijo radiofónico</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px"><small><tt>DAA-DRZ, Y2A-Y9Z</tt></small></td>
+                          </tr>
+                          <tr class="">
+                            <th class="" scope="row" style="text-align:left; padding:1px 7px;"><a href="/wiki/Anexo:C%C3%B3digos_del_COI_para_los_pa%C3%ADses" title="Anexo:Códigos del COI para los países">Código del COI</a></th>
+                            <td class="" style="padding:1px 7px 1px 1px">GER</td>
+                          </tr>
+                          <tr class="">
+                            <td colspan="2" class="" style="text-align:center; text-align:left">Miembro de: <a href="/wiki/Organizaci%C3%B3n_de_las_Naciones_Unidas" title="Organización de las Naciones Unidas">ONU</a>, <a href="/wiki/OTAN" title="OTAN">OTAN</a>, <a href="/wiki/Consejo_de_Estados_del_Mar_B%C3%A1ltico" title="Consejo de Estados del Mar Báltico">CBSS</a>, <a href="/wiki/Organizaci%C3%B3n_para_la_Seguridad_y_la_Cooperaci%C3%B3n_en_Europa" title="Organización para la Seguridad y la Cooperación en Europa">OSCE</a>, <a href="/wiki/Organizaci%C3%B3n_para_la_Cooperaci%C3%B3n_y_el_Desarrollo_Econ%C3%B3micos" title="Organización para la Cooperación y el Desarrollo Económicos">OCDE</a>, <a href="/wiki/G8" title="G8">G8</a>, <a href="/wiki/Consejo_de_Europa" title="Consejo de Europa">COE</a>, <a href="/wiki/Uni%C3%B3n_Europea" title="Unión Europea">UE</a></td>
+                          </tr>
+                        </tbody></table>
+                      </div>
+                    </div>
 
-<div class="footer" horizontal justified layout>
-  <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
-  <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
-  <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
-</div>
+                    <div class="footer" horizontal justified layout>
+                      <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
+                      <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
+                      <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
+                    </div>
 
-</body>
-</html>
+                  </body>
+                  </html>
