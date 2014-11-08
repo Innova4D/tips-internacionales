@@ -5,6 +5,9 @@
   <meta content="width=device-width initial-scale=1" name="viewport" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <script src="../../bower_components/platform/platform.js"></script>
+  <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../../bower_components/simpleWeather/jquery.simpleWeather.js"></script>
+  <script src="http://cl.ly/code/2X1H2G2Z0c2L/jquery.translator-1.1.0.min.js"></script>
   <link href="../../bower_components/polymer/polymer.html" rel="import" />
   <link href="../../bower_components/core-icons/core-icons.html" rel="import">
   <link href="../../bower_components/paper-ripple/paper-ripple.html" rel="import" />
@@ -22,75 +25,126 @@
     <div class="back-nav" horizontal layout center>
       <paper-fab class="button" onclick="setTimeout(function() {window.location='recomendaciones.html' }, 450)" icon="arrow-back"></paper-fab>
       <div class="title" horizontal layout center>
-      <img src="../../images/germany.png"/>&nbspAlemania</div>
-      <div class="subtitle">Clima</div>
+        <img src="../../images/germany.png"/>&nbspAlemania</div>
+        <div class="subtitle">Clima</div>
+      </div>
+    </header>
+    <script>
+    $(document).ready(function() {
+
+      $.simpleWeather({
+        location: 'Berlin',
+        woeid: '',
+        unit: 'c',
+        success: function(weather) {
+          html = '<div class="icon-'+weather.code+' main">'+weather.temp+'&deg;'+weather.units.temp+'</div>';
+          html += '<div class="current">'+weather.currently+'</div>';
+          // for(var i=0;i<weather.forecast.length;i++) {
+          //   html += weather.forecast[i].day+': '+weather.forecast[i].high+'&deg;'+weather.units.temp+'&nbsp';
+          // }
+          $("#weather").html(html);
+        },
+        error: function(error) {
+          $("#weather").html('<p>'+error+'</p>');
+        }
+      });
+      var latitude;
+      var longitude;
+      navigator.geolocation.getCurrentPosition(function(position) {
+        latitude  = position.coords.latitude;
+        longitude = position.coords.longitude;
+        $.simpleWeather({
+          location: latitude + "," + longitude,
+          woeid: '',
+          unit: 'c',
+          success: function(weather) {
+            html = weather.city+'<div class="icon-'+weather.code+' main">'+weather.temp+'&deg;'+weather.units.temp+'</div>';
+            html += '<div class="current">'+weather.currently+'</div>';
+            // for(var i=0;i<weather.forecast.length;i++) {
+            //   html += weather.forecast[i].day+': '+weather.forecast[i].high+'&deg;'+weather.units.temp+'&nbsp';
+            // }
+            $("#weather-located").html(html);
+          },
+          error: function(error) {
+            $("#weather-located").html('<p>'+error+'</p>');
+          }
+        });
+      });
+    });
+    </script>
+    <div class="page-banner">
+    <style type="text/css">
+    .nav-bar {
+      background-image: url('../../images/clima.jpg');
+    }
+    .clima{
+      margin: 25px;
+      border: 2px solid #c9e3eb;
+      width: 90px;
+      height: 90px;
+      background: #06a0bc;
+      border-radius: 50%;
+      padding: 10px;
+      color: white;
+      font-family: "Roboto";
+      font-weight: 100;
+      text-align: center;
+    }
+    .clima .main {
+      font-size: 35px;
+      font-weight: 300;
+    }
+    .clima .current {
+      font-size: 12px;
+      font-weight: 100;
+      opacity: 0.8;
+    }
+    </style>
+  </div>
+  <div class="menu-content">
+
+    <div class="item" onclick="setTimeout(function() {window.location='../../content/germany/primavera.html'}, 300)" horizontal layout center>
+      <img src="../../images/Primaveraico.png" />
+      <div class="label">Primavera</div>
+      <paper-ripple fit></paper-ripple>
     </div>
-  </header>
-  <div class="page-banner">
-  <style type="text/css">
-  .nav-bar {
-    background-image: url('../../images/clima.jpg');
-  }
-  .live-weather{
-    padding: 20px;
-  }
-  #cont_aa879bbf4c4c0062fce983ef27f78dbe{
-    border-left: 5px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-  #cont_e94872249d0a93fe95eee3ed09eb3099{
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
-  </style>
-</div>
-<div class="menu-content">
 
-  <div class="item" onclick="setTimeout(function() {window.location='../../content/germany/primavera.html'}, 300)" horizontal layout center>
-    <img src="../../images/Primaveraico.png" />
-    <div class="label">Primavera</div>
-    <paper-ripple fit></paper-ripple>
-  </div>
-
-  <div class="item odd" onclick="setTimeout(function() {window.location='../../content/germany/verano.html'}, 300)" horizontal layout center>
-    <img src="../../images/Veranoico.png" />
-    <div class="label">Verano</div>
-    <paper-ripple fit></paper-ripple>
-  </div>
-
-  <div class="item" onclick="setTimeout(function() {window.location='../../content/germany/otono.html'}, 300)" horizontal layout center>
-    <img src="../../images/otonoico.png" />
-    <div class="label">Otoño</div>
-    <paper-ripple fit></paper-ripple>
-  </div>
-
-  <div class="item odd" onclick="setTimeout(function() {window.location='../../content/germany/invierno.html'}, 300)" horizontal layout center>
-    <img src="../../images/inviernoico.png" />
-    <div class="label">Invierno</div>
-    <paper-ripple fit></paper-ripple>
-  </div>
-
-  <div class="live-weather" horizontal layout center>
-    <div id="cont_e94872249d0a93fe95eee3ed09eb3099">
-      <span id="h_e94872249d0a93fe95eee3ed09eb3099"><a href="https://www.meteored.mx/clima_Monterrey-America+Norte-Mexico-Nuevo+Leon-MMMY-1-21045.html" target="_blank" style="color:#808080; font-family:2; font-size:14px;">Clima Alemania</a></span>
-      <script type="text/javascript" src="https://www.meteored.mx/wid_loader/e94872249d0a93fe95eee3ed09eb3099"></script>
+    <div class="item odd" onclick="setTimeout(function() {window.location='../../content/germany/verano.html'}, 300)" horizontal layout center>
+      <img src="../../images/Veranoico.png" />
+      <div class="label">Verano</div>
+      <paper-ripple fit></paper-ripple>
     </div>
-    <div id="cont_aa879bbf4c4c0062fce983ef27f78dbe">
-      <span id="h_aa879bbf4c4c0062fce983ef27f78dbe"><a href="https://www.meteored.mx/clima_Monterrey-America+Norte-Mexico-Nuevo+Leon-MMMY-1-21045.html" target="_blank" style="color:#808080; font-family:2; font-size:14px;">Clima M&eacute;xico</a></span>
-      <script type="text/javascript" src="https://www.meteored.mx/wid_loader/aa879bbf4c4c0062fce983ef27f78dbe"></script>
+
+    <div class="item" onclick="setTimeout(function() {window.location='../../content/germany/otono.html'}, 300)" horizontal layout center>
+      <img src="../../images/otonoico.png" />
+      <div class="label">Otoño</div>
+      <paper-ripple fit></paper-ripple>
     </div>
+
+    <div class="item odd" onclick="setTimeout(function() {window.location='../../content/germany/invierno.html'}, 300)" horizontal layout center>
+      <img src="../../images/inviernoico.png" />
+      <div class="label">Invierno</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
+
+    <div horizontal layout>
+      <div flex></div>
+      <div class="clima">Berlín<div id="weather"></div></div>
+      <div flex></div>
+      <div class="clima"><div id="weather-located"></div></div>
+      <div flex></div>
+    </div>
+    <div class="dummy" horizontal layout center>
+      <p> hello
+
+      </p>
+    </div>
+
   </div>
-
-  <div class="dummy" horizontal layout center></div>
-
-</div>
-<div class="footer" horizontal justified layout>
-  <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
-  <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
-  <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
-</div>
+  <div class="footer" horizontal justified layout>
+    <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
+    <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
+    <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
+  </div>
 </body>
 </html>
