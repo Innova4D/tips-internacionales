@@ -89,23 +89,25 @@ height: 100%;
   color: white;
   margin-left: 10px;
   min-width: 55px;
+  position: absolute;
+  top: 130px;
 }
 .nav-bar .button::shadow > svg {
   transform: scale(1.5);
 }
 /* line 20, ../_sass/main.sass */
 .nav-bar .title {
-  margin-top: 120px;
   color: white;
   display: inline;
-  font-size: 22px;
+  font-size: 40px;
+  padding: 40px;
   font-weight: 100;
   opacity: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: auto;
-  text-shadow: 2px 2px 5px rgba(0,0,0,1);
+  text-shadow: 2px 0px 5px rgba(0,0,0,1);
 }
 
 /* line 38, ../_sass/main.sass */
@@ -167,12 +169,12 @@ height: 100%;
 /* line 74, ../_sass/main.sass */
 .menu-content .item img {
   height: 40px;
-  margin-left: 8%;
+  margin-left: 20%;
 }
 /* line 79, ../_sass/main.sass */
 .menu-content .item .label {
   display: inline;
-  margin-left: 5%;
+  margin-left: 8%;
   color: black;
   float: left;
   text-transform: none;
@@ -207,4 +209,7 @@ paper-ripple {
   background-position: center top;
   filter: blur(0px);
   -webkit-filter: blur(0px);
+}
+.info {
+  cursor: pointer;
 }
