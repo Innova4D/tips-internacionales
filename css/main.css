@@ -256,10 +256,11 @@ paper-dialog::shadow #main {
   padding-left:  0px;
   padding-right: 0px;
 }
-paper-dialog::shadow > h1 {
+paper-dialog::shadow #main h1 {
   font-family: "Roboto", Helvetica;
   font-size: 24px !important;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 paper-dialog::shadow #container #actions{
@@ -271,7 +272,7 @@ paper-dialog::shadow #container #actions{
 .credit-title {
   opacity: 1;
   color: white;
-  border-bottom: 1px solid rgba(255,255,255, 0.6);
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
   font-family: "Roboto", Helvetica;
   font-size: 15px !important;
   font-weight: 300;
