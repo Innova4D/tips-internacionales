@@ -102,7 +102,15 @@
   </div>
   <div class="menu-content">
 
-    <div class="item" onclick="setTimeout(function() {window.location='../../content/germany/primavera.html'}, 300)" horizontal layout center>
+    <div horizontal layout>
+      <div flex></div>
+      <div class="clima">Berlín<div id="weather"><img width="25px" src="../../images/loader.gif"></div></div>
+      <div flex></div>
+      <div class="clima"><div id="weather-located"><img width="25px" src="../../images/loader.gif">Obteniendo ubicación</div></div>
+      <div flex></div>
+    </div>
+
+    <div class="item" style="border-top: 1px solid #c9e3eb;" onclick="setTimeout(function() {window.location='../../content/germany/primavera.html'}, 300)" horizontal layout center>
       <img src="../../images/Primaveraico.png" />
       <div class="label">Primavera</div>
       <paper-ripple fit></paper-ripple>
@@ -124,14 +132,6 @@
       <img src="../../images/inviernoico.png" />
       <div class="label">Invierno</div>
       <paper-ripple fit></paper-ripple>
-    </div>
-
-    <div horizontal layout>
-      <div flex></div>
-      <div class="clima">Berlín<div id="weather"></div></div>
-      <div flex></div>
-      <div class="clima"><div id="weather-located"></div></div>
-      <div flex></div>
     </div>
     <div class="dummy" horizontal layout center></div>
 

@@ -11,100 +11,124 @@
   <link href="bower_components/core-icon/core-icon.html" rel="import">
   <link href="bower_components/core-icons/core-icons.html" rel="import">
   <link href="bower_components/paper-fab/paper-fab.html" rel="import" />
+  <link href="bower_components/paper-dialog/paper-dialog.html" rel="import" />
+  <link href="bower_components/paper-dialog/paper-dialog-transition.html" rel="import" />
+  <link href="bower_components/core-overlay/core-overlay.html" rel="import" />
   <link href="css/main.css" rel="stylesheet" />
   <link href="bower_components/normalize.css/normalize.css" rel="stylesheet" />
   <link href="http:///TIPSinternacionales/" rel="canonical" />
-  <link href='//fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="../../favicon.ico" />
+  <!-- <link href='//fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'> -->
+  <link rel="shortcut icon" href="favicon.ico" />
   <title>Asistente de Negocios Internacionales</title>
 </head>
 <body>
+  <script>
+    function toggleDialog(transition) {
+      var dialog = document.querySelector('paper-dialog[transition=' + transition + ']');
+      dialog.toggle();
+    }
+  </script>
   <header class="nav-bar">
     <div class="back-nav" horizontal layout center>
-    <paper-fab class="button" onclick="setTimeout(function() {window.location='../' }, 450)" icon="home"></paper-fab>
-    <div class="title-init" horizontal layout center>
-    <img src="images/6.png" style="width: 80px; min-width: 80px;" />
-    <div class="title-st" style="width: 110px">Asistente de Negocios Internacionales</div>
+      <paper-fab class="button" onclick="setTimeout(function() {window.location='../' }, 450)" icon="home"></paper-fab>
+      <div class="title-init" horizontal layout center>
+        <img src="images/6.png" style="width: 60px; min-width: 60px;" />
+        <div class="title-st" style="width: 110px">Asistente de Negocios Internacionales</div>
+      </div>
+      <core-icon class="info" style="color: white;" icon="info-outline" onclick="toggleDialog('paper-dialog-transition-bottom')">
+        <paper-ripple class="circle recenteringTouch" fit></paper-ripple>
+      </core-icon>
+    </header>
+    <div class="page-banner">
+    <style type="text/css">
+    .nav-bar {
+      background-image: url('../../images/viaje.jpg');
+    }
+    .title-init{
+      font-size: 20px;
+      color: white;
+      font-family: "Roboto", Helvetica;
+      font-weight: 100;
+      margin-left: 50px;
+      width: 100%;
+    }
+    .title-st{
+      padding-left: 10px;
+      text-shadow: 0  px 1px 1px rgba(0,0,0,1);
+      font-family: 'Roboto','Helvetica', sans-serif;
+      font-weight: 100;
+    }
+    </style>
+  </div>
+  <div class="menu-content">
+
+
+    <paper-dialog heading="Acerca De.." transition="paper-dialog-transition-bottom" role="dialog" aria-label="Dialog" tabindex="-1" class="paper-dialog-transition paper-dialog-transition-bottom" style="width: 100%; background: rgba(44, 62, 80, 0.98); color: white; outline: none; z-index: 12; display: none;">
+      <paper-fab label="X" affirmative="" autofocus="" role="button" tabindex="0" icon="close" style="position: absolute; top: 15px; right: 20px; background: #e74c3c;"></paper-fab>
+      <br>
+      <div class="credit-title">Programación y diseño</div>
+      <div class="credit-body">Gustavo López, Raúl Tostado, Roberto Tello, Francisco Gutiérrez.</div>
+      <div class="credit-title">Análisis de información y diseño</div>
+      <div class="credit-body">Stephany Díaz de la Vega, Amapola Rangel.</div>
+      <div class="credit-title">Jefe del Departamento de Negocios Internacionales</div>
+      <div class="credit-body">Dr. Stanley Howard Hart.</div>
+      <div class="credit-title">Experta en comunicación multicultural</div>
+      <div class="credit-body">Dra. Marcela Ibañez.</div>
+      <div class="credit-title">Coordinadora general</div>
+      <div class="credit-body">Dra. Ofelia Cervantes.</div>
+      <div class="credits" horizontal justified layout>
+      <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
+      <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
+      <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
+      </div>
+    </paper-dialog>
+
+
+    <div class="item" onclick="setTimeout(function() {window.location='content/germany'}, 300)" horizontal layout center>
+      <img src="images/germany.png"/>
+      <div class="label">Alemania</div>
+      <paper-ripple fit></paper-ripple>
     </div>
-    <core-icon class="info" style="color: white;" icon="info-outline">
-      <paper-ripple class="circle recenteringTouch" fit></paper-ripple>
-    </core-icon>
-  </header>
-  <div class="page-banner">
-  <style type="text/css">
-  .nav-bar {
-    background-image: url('../../images/viaje.jpg');
-  }
-  .info{
-    padding:0px;
-    margin: 0px;
-    width:  24px;
-    height: 24px;
-    position: absolute;
-    top:   0px;
-    right: 0px;
-  }
-  .title-init{
-    font-size: 20px;
-    color: white;
-    font-family: "Roboto", Helvetica;
-    font-weight: 100;
-    margin-left: 50px;
-    width: 100%;
-  }
-  .title-st{
-    padding-left: 10px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,1);
-  }
-  </style>
-</div>
-<div class="menu-content">
 
-  <div class="item" onclick="setTimeout(function() {window.location='content/germany'}, 300)" horizontal layout center>
-    <img src="images/germany.png"/>
-    <div class="label">Alemania</div>
-    <paper-ripple fit></paper-ripple>
+    <div class="item odd" onclick="setTimeout(function() {window.location='../'}, 300)" horizontal layout center>
+      <img src="images/brazil.png" />
+      <div class="label">Brasil</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
+
+    <div class="item" onclick="setTimeout(function() {window.location='../'}, 300)" horizontal layout center>
+      <img src="images/usa.png" />
+      <div class="label">Estados Unidos</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
+
+    <div class="item odd" onclick="setTimeout(function() {window.location='../'}, 300)" horizontal layout center>
+      <img src="images/spain.png" />
+      <div class="label">España</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
+
+    <div class="item" onclick="setTimeout(function() {window.location='../'}, 300)" horizontal layout center>
+      <img src="images/france.png" />
+      <div class="label">Francia</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
+
+    <div class="item odd" onclick="setTimeout(function() {window.location='../'}, 300)" horizontal layout center>
+      <img src="images/mexico.png" />
+      <div class="label">México</div>
+      <paper-ripple fit></paper-ripple>
+    </div>
+
+    <div class="dummy" horizontal layout center></div>
+
   </div>
 
-  <div class="item odd" onclick="setTimeout(function() {window.location='../'}, 300)" horizontal layout center>
-    <img src="images/brazil.png" />
-    <div class="label">Brasil</div>
-    <paper-ripple fit></paper-ripple>
+  <div class="footer" horizontal justified layout>
+    <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
+    <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
+    <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
   </div>
-
-  <div class="item" onclick="setTimeout(function() {window.location='../'}, 300)" horizontal layout center>
-    <img src="images/usa.png" />
-    <div class="label">Estados Unidos</div>
-    <paper-ripple fit></paper-ripple>
-  </div>
-
-  <div class="item odd" onclick="setTimeout(function() {window.location='../'}, 300)" horizontal layout center>
-    <img src="images/spain.png" />
-    <div class="label">España</div>
-    <paper-ripple fit></paper-ripple>
-  </div>
-
-  <div class="item" onclick="setTimeout(function() {window.location='../'}, 300)" horizontal layout center>
-    <img src="images/france.png" />
-    <div class="label">Francia</div>
-    <paper-ripple fit></paper-ripple>
-  </div>
-
-  <div class="item odd" onclick="setTimeout(function() {window.location='../'}, 300)" horizontal layout center>
-    <img src="images/mexico.png" />
-    <div class="label">México</div>
-    <paper-ripple fit></paper-ripple>
-  </div>
-
-  <div class="dummy" horizontal layout center></div>
-
-</div>
-
-<div class="footer" horizontal justified layout>
-  <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
-  <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
-  <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
-</div>
 
 </body>
 </html>

@@ -77,16 +77,17 @@ body{
   z-index: 1;
 }
 .back-nav{
-background: rgba(226,226,226,0);
-background: -moz-linear-gradient(top, rgba(226,226,226,0) 0%, rgba(46,46,46,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,0)), color-stop(100%, rgba(46,46,46,1)));
-background: -webkit-linear-gradient(top, rgba(226,226,226,0) 0%, rgba(46,46,46,1) 100%);
-background: -o-linear-gradient(top, rgba(226,226,226,0) 0%, rgba(46,46,46,1) 100%);
-background: -ms-linear-gradient(top, rgba(226,226,226,0) 0%, rgba(46,46,46,1) 100%);
-background: linear-gradient(to bottom, rgba(226,226,226,0) 0%, rgba(46,46,46,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#2e2e2e', GradientType=0 );
-width: 100%;
-height: 100%;
+  /*background: rgba(226,226,226,0);
+  background: -moz-linear-gradient(top, rgba(226,226,226,0) 0%, rgba(46,46,46,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,0)), color-stop(100%, rgba(46,46,46,1)));
+  background: -webkit-linear-gradient(top, rgba(226,226,226,0) 0%, rgba(46,46,46,1) 100%);
+  background: -o-linear-gradient(top, rgba(226,226,226,0) 0%, rgba(46,46,46,1) 100%);
+  background: -ms-linear-gradient(top, rgba(226,226,226,0) 0%, rgba(46,46,46,1) 100%);
+  background: linear-gradient(to bottom, rgba(226,226,226,0) 0%, rgba(46,46,46,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#2e2e2e', GradientType=0 );*/
+  background: rgba(0,0,0,.45);
+  width: 100%;
+  height: 100%;
 }
 /* line 14, ../_sass/main.sass */
 .nav-bar .button {
@@ -105,14 +106,14 @@ height: 100%;
   color: white;
   display: inline;
   font-size: 40px;
-  padding: 5px;
+  padding: 15px;
   font-weight: 100;
   opacity: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: auto;
-  text-shadow: 2px 1px 2px rgba(0,0,0,1);
+  text-shadow: 0px 1px 2px rgba(0,0,0,1);
 }
 
 /* line 38, ../_sass/main.sass */
@@ -189,6 +190,8 @@ height: 100%;
 
 /* line 96, ../_sass/main.sass */
 .footer {
+  display: none;
+  visibility: hidden;
   padding:5px;
   width: 100%;
   background: rgba(5,90,153,0.9);
@@ -200,6 +203,7 @@ height: 100%;
 }
 /* line 100, ../_sass/main.sass */
 .footer a img {
+  display:none;
   height: 40px;
   padding-left: 20px;
   padding-right: 20px;
@@ -215,8 +219,14 @@ paper-ripple {
   filter: blur(0px);
   -webkit-filter: blur(0px);
 }
-.info {
+.info{
+  margin: 0px;
+  width:  24px;
+  height: 24px;
+  position: absolute;
   cursor: pointer;
+  top:   10px;
+  right: 10px;
 }
 .subtitle{
   width: 100%;
@@ -224,10 +234,44 @@ paper-ripple {
   font-family: "Roboto", Helvetica;
   font-weight: 100;
   font-size: 20px;
-  text-shadow: 2px 1px 1px rgba(0,0,0,1);
-  opacity: 0.7;
+  text-shadow: 0px 1px 1px rgba(0,0,0,1);
+  opacity: 0.85;
   position: absolute;
-  left: 85px;
+  left: 95px;
   bottom: 30px;
   border-top: 2px solid white;
+}
+
+.credits {
+  width: 100%;
+  padding-top: 10px;
+}
+.credits img {
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+paper-dialog::shadow #main {
+  font-family: "Roboto", Helvetica;
+  font-size: 15px;
+  font-weight: 100;
+  padding-bottom: 0;
+}
+
+.credit-title {
+  opacity: 1;
+  color: white;
+  border-bottom: 1px solid rgba(255,255,255, 0.6);
+  font-family: "Roboto", Helvetica;
+  font-size: 25px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.credit-body {
+  opacity: 0.5;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px !important; 
+  font-weight: 300;
+  padding-bottom: 20px;
 }
