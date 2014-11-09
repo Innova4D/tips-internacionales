@@ -241,10 +241,11 @@ paper-ripple {
   height: 50px;
 }
 paper-dialog{
+  font-family: Arial, Helvetica !important;
   height: 90%;
 }
 paper-dialog::shadow #main {
-  font-family: "Roboto", Helvetica;
+  font-family: Arial, Helvetica !important;
   font-size: 15px !important;
   font-weight: 100;
   margin-bottom:  0px;
@@ -255,8 +256,8 @@ paper-dialog::shadow #main {
   padding-left:  0px;
   padding-right: 0px;
 }
-paper-dialog::shadow #main h1 {
-  font-family: Arial, Helvetica;
+paper-dialog::shadow #main > h1 {
+  font-family: Arial, Helvetica !important;
   font-size: 24px;
   margin-top: 15px;
 }
@@ -272,7 +273,7 @@ paper-dialog::shadow #container #actions{
   color: white;
   border-bottom: 1px solid rgba(255,255,255, 0.6);
   font-family: "Roboto", Helvetica;
-  font-size: 25px;
+  font-size: 15px !important;
   font-weight: 300;
   margin-bottom: 2px;
 }
