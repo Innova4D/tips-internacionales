@@ -6,15 +6,17 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <script src="../../bower_components/platform/platform.js"></script>
   <link href="../../bower_components/polymer/polymer.html" rel="import" />
-  <link href="../../bower_components/core-icons/core-icons.html" rel="import">
-  <link href="../../bower_components/paper-ripple/paper-ripple.html" rel="import" />
   <link href="../../bower_components/paper-button/paper-button.html" rel="import" />
+  <link href="../../bower_components/paper-ripple/paper-ripple.html" rel="import" />
+  <link href="../../bower_components/core-icon/core-icon.html" rel="import">
+  <link href="../../bower_components/core-icons/core-icons.html" rel="import">
   <link href="../../bower_components/paper-fab/paper-fab.html" rel="import" />
+  <link href="../../bower_components/paper-dialog/paper-dialog.html" rel="import" />
+  <link href="../../bower_components/paper-dialog/paper-dialog-transition.html" rel="import" />
+  <link href="../../bower_components/core-overlay/core-overlay.html" rel="import" />
   <link href="../../css/main.css" rel="stylesheet" />
-  <link href="../../bower_components/normalize.css/normalize.css" rel="stylesheet" />
-  <link href="/content/germany/" rel="canonical" />
   <link href='//fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="//faviconist.com/icons/026bb91cadd9c66c845d0a131c761215/favicon.ico" />
+  <link rel="shortcut icon" href="../../favicon.ico" />
   <title>Alemania - Salud</title>
 </head>
 <body>
@@ -26,9 +28,12 @@
       <img src="../../images/germany.png"/>&nbspAlemania</div>
       <div class="subtitle">Salud</div>
     </div>
+    <core-icon class="info" style="color: white;" icon="info-outline" onclick="toggleDialog('paper-dialog-transition-bottom')">
+      <paper-ripple class="circle recenteringTouch" fit></paper-ripple>
+    </core-icon>
   </header>
 
-  <div class="page-banner">
+  <div class="page-banner" style="z-index:0;">
   <style type="text/css">
   .nav-bar {
     background-image: url('../../images/salud.jpg');
@@ -37,6 +42,31 @@
 </div>
 
 <div class="page-content">
+  <paper-dialog heading="Acerca De.." transition="paper-dialog-transition-bottom" role="dialog" aria-label="Dialog" tabindex="-1" class="paper-dialog-transition paper-dialog-transition-bottom" style="width: 100%; background: rgba(44, 62, 80, 0.98); color: white; outline: none; z-index: 1000000 !important; display: none;">
+    <paper-fab label="X" affirmative="" autofocus="" role="button" tabindex="0" icon="close" style="position: absolute; top: 15px; right: 20px; background: #e74c3c;"></paper-fab>
+    <br>
+    <div class="credit-title">Programación y diseño</div>
+    <div class="credit-body">Gustavo López, Raúl Tostado, Roberto Tello, Francisco Gutiérrez.</div>
+    <div class="credit-title">Análisis de información y diseño</div>
+    <div class="credit-body">Stephany Díaz de la Vega, Amapola Rangel.</div>
+    <div class="credit-title">Jefe del Departamento de Negocios Internacionales</div>
+    <div class="credit-body">Dr. Stanley Howard Hart.</div>
+    <div class="credit-title">Experta en comunicación multicultural</div>
+    <div class="credit-body">Dra. Marcela Ibañez.</div>
+    <div class="credit-title">Coordinadora general</div>
+    <div class="credit-body">Dra. Ofelia Cervantes.</div>
+    <div class="credits" horizontal justified layout>
+    <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
+    <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
+    <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
+    </div>
+  </paper-dialog>
+  <script>
+    function toggleDialog(transition) {
+      var dialog = document.querySelector('paper-dialog[transition=' + transition + ']');
+      dialog.toggle();
+    }
+  </script>
   <div class="text-center">
     <p><ul><li>Viaje cubierto con un seguro m&eacutedico que cubra gastos m&eacutedicos mayores durante su viaje.</li>
       <p><li>Si se est&aacute  bajo un tratamiento,<b> se recomienda llevar medicamentos prescritos</b> previamente comprados con su receta m&eacutedica. </li></p>
