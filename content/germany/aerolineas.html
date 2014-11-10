@@ -23,69 +23,66 @@
 
   <header class="nav-bar">
     <div class="back-nav" horizontal layout center>
-    <paper-fab class="button" onclick="setTimeout(function() {window.location='recomendaciones.html' }, 450)" icon="arrow-back"></paper-fab>
-    <div class="title" horizontal layout center>
-      <img src="../../images/germany.png"/>&nbspAlemania</div>
-      <div class="subtitle">Transporte</div>
-    </div>
-    <core-icon class="info" style="color: white;" icon="info-outline" onclick="toggleDialog('paper-dialog-transition-bottom')">
-      <paper-ripple class="circle recenteringTouch" fit></paper-ripple>
-    </core-icon>
-  </header>
+      <paper-fab class="button" onclick="setTimeout(function() {window.location='recomendaciones.html' }, 450)" icon="arrow-back"></paper-fab>
+      <div class="title" horizontal layout center>
+        <img src="../../images/germany.png"/>&nbspAlemania</div>
+        <div class="subtitle">Transporte</div>
+      </div>
+      <core-icon class="info" style="color: white;" icon="info-outline" onclick="toggleDialog('paper-dialog-transition-bottom')">
+        <paper-ripple class="circle recenteringTouch" fit></paper-ripple>
+      </core-icon>
+    </header>
 
-  <div class="page-banner">
-  <style type="text/css">
-  .nav-bar {
-    background-image: url('../../images/aerolineas.jpg');
-  }
-  </style>
-</div>
-<div class="page-content">
-  <paper-dialog heading="Acerca De..." transition="paper-dialog-transition-bottom" role="dialog" aria-label="Dialog" tabindex="-1" class="paper-dialog-transition paper-dialog-transition-bottom" style="width: 100%; background: rgba(44, 62, 80, 0.98); color: white; outline: none; z-index: 12; display: none;">
-    <paper-fab label="X" affirmative="" autofocus="" role="button" tabindex="0" icon="close" style="position: absolute; top: 15px; right: 20px; background: #e74c3c;"></paper-fab>
-    <br>
-    <div class="credit-title">Programación y diseño</div>
-    <div class="credit-body">Gustavo López, Raúl Tostado, Roberto Tello, Francisco Gutiérrez.</div>
-    <div class="credit-title">Análisis de información y diseño</div>
-    <div class="credit-body">Stephany Díaz de la Vega, Amapola Rangel.</div>
-    <div class="credit-title">Jefe del Departamento de Negocios Internacionales</div>
-    <div class="credit-body">Dr. Stanley Howard Hart.</div>
-    <div class="credit-title">Experta en comunicación multicultural</div>
-    <div class="credit-body">Dra. Marcela Ibañez.</div>
-    <div class="credit-title">Coordinadora general</div>
-    <div class="credit-body">Dra. Ofelia Cervantes.</div>
-    <div class="credits" horizontal justified layout>
-    <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
-    <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
-    <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
-    </div>
-  </paper-dialog>
-  <script>
+    <div class="page-banner">
+    <style type="text/css">
+    .nav-bar {
+      background-image: url('../../images/aerolineas.jpg');
+    }
+    </style>
+  </div>
+  <div class="page-content">
+    <paper-dialog heading="Acerca De..." transition="paper-dialog-transition-bottom" role="dialog" aria-label="Dialog" tabindex="-1" class="paper-dialog-transition paper-dialog-transition-bottom" style="width: 100%; background: rgba(44, 62, 80, 0.98); color: white; outline: none; z-index: 12; display: none;">
+      <paper-fab label="X" affirmative="" autofocus="" role="button" tabindex="0" icon="close" style="position: absolute; top: 15px; right: 20px; background: #e74c3c;"></paper-fab>
+      <br>
+      <div class="credit-title">Programación y diseño</div>
+      <div class="credit-body">Gustavo López, Raúl Tostado, Roberto Tello, Francisco Gutiérrez.</div>
+      <div class="credit-title">Análisis de información y diseño</div>
+      <div class="credit-body">Stephany Díaz de la Vega, Amapola Rangel.</div>
+      <div class="credit-title">Jefe del Departamento de Negocios Internacionales</div>
+      <div class="credit-body">Dr. Stanley Howard Hart.</div>
+      <div class="credit-title">Experta en comunicación multicultural</div>
+      <div class="credit-body">Dra. Marcela Ibañez.</div>
+      <div class="credit-title">Coordinadora general</div>
+      <div class="credit-body">Dra. Ofelia Cervantes.</div>
+      <div class="credits" horizontal justified layout>
+        <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
+        <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
+        <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
+      </div>
+    </paper-dialog>
+    <script>
     function toggleDialog(transition) {
       var dialog = document.querySelector('paper-dialog[transition=' + transition + ']');
       dialog.toggle();
     }
-  </script>
-  <div class="text-center">
-    <br>
-    <p><b>Para vuelos entre México-Alemania: </b><p>
+    </script>
+    <div class="text-center">
+      <br>
+      <p><b>Para vuelos entre México-Alemania: </b><p>
+        <ul><li><a href="http://goo.gl/MtCuK" target="_blank">Lufthansa</a></li><li>Aeroméxico </li></ul>
+        <p><b>Para viajar dentro del pa&iacutes </b> (o la Uni&oacuten Europea en general):</p>
+        <ul><li>Usar <a href="
+          http://www.bahn.com/i/view/index.shtml" target="_blank">trenes</a> (r&aacutepidos y m&aacutes econ&oacutemicos).
+          <li>Rentar auto.</li>
+          <li>Consulte las opciones de las líneas interiores como: <a href="http://www.easyjet.com/en/">Easyjet</a>, <a href="http://www.ryanair.com/">Ryanair</a></li></ul></p>
+        </div>
+      </div>
 
-<ul><li><a href="http://goo.gl/MtCuK" target="_blank">Lufthansa</a></li><li>Aeroméxico </li></ul>
+      <div class="footer" horizontal justified layout>
+        <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
+        <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
+        <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
+      </div>
 
-<p><b>Para viajar dentro del pa&iacutes </b> (o la Uni&oacuten Europea en general):</p>
-
-<ul><li>Usar <a href="
-http://www.bahn.com/i/view/index.shtml" target="_blank">trenes</a> (r&aacutepidos y m&aacutes econ&oacutemicos).
-<li>Rentar auto.</li>
-<li>Consulte las opciones de las líneas interiores como: <a href="http://www.easyjet.com/en/">Easyjet</a>, <a href="http://www.ryanair.com/">Ryanair</a></li></ul></p>
-    </div>
-  </div>
-
-  <div class="footer" horizontal justified layout>
-    <a href="http://www.secotrade.puebla.gob.mx" target="_blank"><img class="logo" src="../../images/sedeco.png" /></a>
-    <a href="http://www.udlap.mx" target="_blank"><img class="logo_udlap" src="../../images/udlap_logo.png" /></a>
-    <a href="http://www.comcepuebla.org.mx/" target="_blank"><img class="logo_merco" src="../../images/comce_sur_logo.png" /></a>
-  </div>
-
-</body>
-</html>
+    </body>
+    </html>
